@@ -13,7 +13,7 @@ interface InfoProps{
 const ServiceDetail:React.FC = () => {
   const router =useRouter();
   const btnBack = () => {
-    router.push('/')
+    router.push('/service')
   }
   const [data, setData] = useState<InfoProps | null>(null);
   const { id } = useParams(); // Access the id parameter from the URL
